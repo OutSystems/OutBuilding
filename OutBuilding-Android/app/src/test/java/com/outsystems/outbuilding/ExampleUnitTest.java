@@ -1,4 +1,4 @@
-package outbuilding.outsystems.com.outbuilding;
+package com.outsystems.outbuilding;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package outbuilding.outsystems.com.outbuilding;
+package com.outsystems.outbuilding;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("outbuilding.outsystems.com.outbuilding", appContext.getPackageName());
+        assertEquals("com.outsystems.outbuilding", appContext.getPackageName());
     }
 }
