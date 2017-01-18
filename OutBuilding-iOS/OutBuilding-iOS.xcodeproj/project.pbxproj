@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171E12F91E2F8862005BFB7E /* vr_troopers_what_didnt_work.png in Resources */ = {isa = PBXBuildFile; fileRef = 171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */; };
 		5973928E1E2F862500AB562E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5973928D1E2F862500AB562E /* main.m */; };
 		597392911E2F862500AB562E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 597392901E2F862500AB562E /* AppDelegate.m */; };
 		597392941E2F862500AB562E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597392931E2F862500AB562E /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vr_troopers_what_didnt_work.png; path = ../../../../Downloads/vr_troopers_what_didnt_work.png; sourceTree = "<group>"; };
 		597392891E2F862400AB562E /* OutBuilding-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OutBuilding-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5973928D1E2F862500AB562E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5973928F1E2F862500AB562E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				597392931E2F862500AB562E /* ViewController.m */,
 				597392951E2F862500AB562E /* Main.storyboard */,
 				597392981E2F862500AB562E /* Assets.xcassets */,
+				171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */,
 				5973929A1E2F862500AB562E /* LaunchScreen.storyboard */,
 				5973929D1E2F862500AB562E /* Info.plist */,
 				5973928C1E2F862500AB562E /* Supporting Files */,
@@ -160,6 +163,7 @@
 				TargetAttributes = {
 					597392881E2F862400AB562E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AZR9FFZD62;
 						ProvisioningStyle = Automatic;
 					};
 					597392A11E2F862500AB562E = {
@@ -195,6 +199,7 @@
 			files = (
 				5973929C1E2F862500AB562E /* LaunchScreen.storyboard in Resources */,
 				597392991E2F862500AB562E /* Assets.xcassets in Resources */,
+				171E12F91E2F8862005BFB7E /* vr_troopers_what_didnt_work.png in Resources */,
 				597392971E2F862500AB562E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZR9FFZD62;
 				INFOPLIST_FILE = "OutBuilding-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsystems.OutBuilding;
@@ -360,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZR9FFZD62;
 				INFOPLIST_FILE = "OutBuilding-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsystems.OutBuilding;
@@ -410,6 +417,7 @@
 				597392AD1E2F862500AB562E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		597392AE1E2F862500AB562E /* Build configuration list for PBXNativeTarget "OutBuilding-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +426,7 @@
 				597392B01E2F862500AB562E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
