@@ -9,5 +9,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Get the image view so we can use for overlays
+        TouchImageView touchImg = (TouchImageView) findViewById(R.id.touchImageView);
     }
 }
