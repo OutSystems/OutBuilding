@@ -30,6 +30,12 @@
     // Set the zoom scale
     [(UIScrollView *)self.view setMaximumZoomScale:3.0];
     [(UIScrollView *)self.view setMinimumZoomScale:1.0];
+    
+    // Set the marker in front of the background
+    UIImage *marker = [UIImage imageNamed:@"marker"];
+    markerView = [[UIImageView alloc] initWithImage:marker];
+    markerView.frame = CGRectMake(300, 300, 50, 50);
+    [imageView addSubview:markerView];
 }
 
 

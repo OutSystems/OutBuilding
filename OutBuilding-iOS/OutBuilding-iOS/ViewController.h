@@ -10,9 +10,11 @@
 
 @interface ViewController : UIViewController {
     UIImageView *imageView;
+    UIImageView *markerView;
 }
 
 @property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, retain) UIImageView *markerView;
 
 @end
 
