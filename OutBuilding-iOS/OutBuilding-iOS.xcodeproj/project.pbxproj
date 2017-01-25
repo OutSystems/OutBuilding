@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		171E12F91E2F8862005BFB7E /* vr_troopers_what_didnt_work.png in Resources */ = {isa = PBXBuildFile; fileRef = 171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */; };
+		5959D6351E38B8F300BA4F9A /* vr_troopers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5959D6341E38B8F300BA4F9A /* vr_troopers.jpg */; };
 		5973928E1E2F862500AB562E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5973928D1E2F862500AB562E /* main.m */; };
 		597392911E2F862500AB562E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 597392901E2F862500AB562E /* AppDelegate.m */; };
 		597392941E2F862500AB562E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 597392931E2F862500AB562E /* ViewController.m */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vr_troopers_what_didnt_work.png; path = ../../../../Downloads/vr_troopers_what_didnt_work.png; sourceTree = "<group>"; };
+		5959D6341E38B8F300BA4F9A /* vr_troopers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = vr_troopers.jpg; path = Assets.xcassets/vr_troopers.jpg; sourceTree = "<group>"; };
 		597392891E2F862400AB562E /* OutBuilding-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OutBuilding-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5973928D1E2F862500AB562E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5973928F1E2F862500AB562E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,13 +83,13 @@
 		5973928B1E2F862400AB562E /* OutBuilding-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5959D6341E38B8F300BA4F9A /* vr_troopers.jpg */,
 				5973928F1E2F862500AB562E /* AppDelegate.h */,
 				597392901E2F862500AB562E /* AppDelegate.m */,
 				597392921E2F862500AB562E /* ViewController.h */,
 				597392931E2F862500AB562E /* ViewController.m */,
 				597392951E2F862500AB562E /* Main.storyboard */,
 				597392981E2F862500AB562E /* Assets.xcassets */,
-				171E12F81E2F8862005BFB7E /* vr_troopers_what_didnt_work.png */,
 				5973929A1E2F862500AB562E /* LaunchScreen.storyboard */,
 				5973929D1E2F862500AB562E /* Info.plist */,
 				5973928C1E2F862500AB562E /* Supporting Files */,
@@ -199,8 +199,8 @@
 			files = (
 				5973929C1E2F862500AB562E /* LaunchScreen.storyboard in Resources */,
 				597392991E2F862500AB562E /* Assets.xcassets in Resources */,
-				171E12F91E2F8862005BFB7E /* vr_troopers_what_didnt_work.png in Resources */,
 				597392971E2F862500AB562E /* Main.storyboard in Resources */,
+				5959D6351E38B8F300BA4F9A /* vr_troopers.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +357,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 69UED9254F;
 				INFOPLIST_FILE = "OutBuilding-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.outsystems.OutBuilding-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +371,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 69UED9254F;
 				INFOPLIST_FILE = "OutBuilding-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.outsystems.OutBuilding-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
