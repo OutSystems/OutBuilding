@@ -11,6 +11,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Get the image view so we can use for overlays
-        TouchImageView touchImg = (TouchImageView) findViewById(R.id.touchImageView);
+        //TouchImageView touchImg = (TouchImageView) findViewById(R.id.touchImageView);
     }
 }
