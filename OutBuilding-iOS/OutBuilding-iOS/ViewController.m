@@ -8,45 +8,40 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation ViewController
 
-@synthesize imageView;
+// You don't need to modify the default initWithNibName:bundle: method.
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)loadView {
+    // Create a GMSCameraPosition that tells the map to display the
+    // coordinate 38.717069,-9.238674 at zoom level 24.
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:38.717069
+                                                            longitude:-9.238674
+                                                                 zoom:24];
+    GMSMapView *mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+    mapView.myLocationEnabled = YES;
+    self.view = mapView;
     
-    // This could be in the storyboard!
-    UIImage *image = [UIImage imageNamed:@"vr_troopers.jpg"];
-    imageView = [[UIImageView alloc] initWithImage:image];
-    [self.view addSubview:imageView];
+    // Creates a marker in the center of the map.
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = CLLocationCoordinate2DMake(38.717069, -9.238674);
+    marker.title = @"OutSystems";
+    marker.snippet = @"Central Park";
+    marker.map = mapView;
     
-    // We need this to say to the view the size of the image we want to display
-    [(UIScrollView *)self.view setContentSize: [image size]];
+    CLLocationCoordinate2D southWest = CLLocationCoordinate2DMake(38.716734, -9.238760);
+    CLLocationCoordinate2D northEast = CLLocationCoordinate2DMake(38.717768, -9.238255);
+    GMSCoordinateBounds *overlayBounds = [[GMSCoordinateBounds alloc] initWithCoordinate:southWest
+                                                                              coordinate:northEast];
     
-    // Set the zoom scale
-    [(UIScrollView *)self.view setMaximumZoomScale:3.0];
-    [(UIScrollView *)self.view setMinimumZoomScale:1.0];
-    
-    // Set the marker in front of the background
-    UIImage *marker = [UIImage imageNamed:@"marker"];
-    markerView = [[UIImageView alloc] initWithImage:marker];
-    markerView.frame = CGRectMake(300, 300, 50, 50);
-    [imageView addSubview:markerView];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-// This method tells the view what image we are trying to zoom
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
-    return imageView;
+    // Image from http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg
+    UIImage *icon = [UIImage imageNamed:@"floor1"];
+    GMSGroundOverlay *overlay =
+    [GMSGroundOverlay groundOverlayWithBounds:overlayBounds icon:icon];
+    overlay.bearing = 0;
+    overlay.map = mapView;
 }
 
 @end
