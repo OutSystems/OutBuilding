@@ -13,6 +13,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -74,10 +76,20 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        //TODO only used to help center the ground overlay, remove eventually
+        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
-        // Add a marker in Linda-a-Velha and move the camera
+        //TODO center this better, ask NAAT for help in rotating image with her mad skillz
         LatLng lav = new LatLng(38.717212, -9.238582);
-        mMap.addMarker(new MarkerOptions().position(lav).title("Marker in Linda-a-Velha"));
+        GroundOverlayOptions osFloor = new GroundOverlayOptions()
+                .image(BitmapDescriptorFactory.fromResource(R.drawable.floor3))
+                .position(lav, 86f);
+        mMap.addGroundOverlay(osFloor);
+        // Center in these coordinates and zoom in
+        //TODO lock min/max zoom
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lav));
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(17.0f));
+        //TODO test marker used as visual anchor, remove eventually
+        mMap.addMarker(new MarkerOptions().position(lav).title("Marker in Linda-a-Velha"));
     }
 }
