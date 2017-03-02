@@ -27,7 +27,7 @@
 
 	<com.mancj.materialsearchbar.MaterialSearchBar
 		app:speechMode="true"
-		app:hint="Custom hint"
+		app:hint="@string/where_to"
 		app:maxSuggestionsCount="10"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
