@@ -25,19 +25,13 @@
 		android:background="#c0000000"
 		android:visibility="invisible"/>
 
-	<AutoCompleteTextView
-		android:layout_width="wrap_content"
+	<com.mancj.materialsearchbar.MaterialSearchBar
+		app:speechMode="true"
+		app:hint="Custom hint"
+		app:maxSuggestionsCount="10"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/autoCompleteTextView"
-		android:background="@drawable/where_to_shape"
-		android:textAlignment="center"
-		android:hint="@string/where_to"
-		android:textSize="18sp"
-		android:inputType="textPersonName"
-		android:ems="10"
-		android:layout_alignParentTop="true"
-		android:layout_centerHorizontal="true"
-		android:layout_marginTop="55dp" />
+		android:id="@+id/searchBar" />
 
 </RelativeLayout>
 

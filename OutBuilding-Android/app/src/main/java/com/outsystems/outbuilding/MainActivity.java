@@ -33,6 +33,8 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
+        /*
         // Get a reference to the AutoCompleteTextView in the layout
         AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView);
 
@@ -62,6 +64,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
                 linearLayout.setVisibility(View.INVISIBLE);
             }
         });
+        */
     }
 
     /**

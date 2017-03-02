@@ -30,4 +30,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.google.android.gms:play-services:10.0.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.github.mancj:MaterialSearchBar:0.6'
 }
